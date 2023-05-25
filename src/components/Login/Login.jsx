@@ -23,8 +23,12 @@ const Login = ({setAlerta}) => {
   return (
     <form className='Formulario' onSubmit={validateLogin}>
         <h2>Ingresa con tu email y contraseña</h2>
-        <input type="email" placeholder='Ingresa tu email' name="" id="" onChange={getEmail}/>
-        <input type="password" placeholder='******' name="" id="" onChange={getPassword} />
+        <div className="inputrow">
+            <img width="18" height="18" src="https://img.icons8.com/ios-filled/50/gender-neutral-user.png" alt="gender-neutral-user"/>
+            <input type="email" placeholder='Ingresa tu email' name="" id="" onChange={getEmail}/></div>
+        <div className="inputrow">
+            <img width="18" height="18" src="https://img.icons8.com/material-rounded/24/lock--v1.png" alt="lock--v1"/>            
+            <input type="password" placeholder='******' name="" id="" onChange={getPassword} /></div>
         <button type="submit" disabled={!email.trim() || !password.trim()}>Submit</button>
     </form>
   )

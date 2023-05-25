@@ -1,5 +1,6 @@
 .azul{
     background-color: #095385b6;
+    color: #ffffff;
     width: 60%;
     padding: 20px;
     margin-top: 5px;
@@ -8,6 +9,7 @@
 }
 .rojo{
     background-color: #e70505bf;
+    color: #ffffff;
     width: 60%;
     padding: 20px;
     margin-top: 5px;
